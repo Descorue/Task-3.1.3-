@@ -54,7 +54,7 @@
             <td th:text="${user.getEmail()}"></td>
             <td>
                 <ul th:each="role:${user.getRoles()}">
-                    <li th:text="${role.getName()}"></li>
+                    <li th:text="${role.getName().replace('ROLE_', '') + ' '}"></li>
                 </ul>
             </td>
             <td class="actions">
