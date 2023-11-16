@@ -29,7 +29,6 @@ public class RoleServiceImpl implements RoleService {
         roleRepository.save(role);
 
     }
-
     @Override
     public Role showUserById(Long id) {
         return roleRepository.getById(id);
